@@ -1,0 +1,799 @@
+/*******SCHEDULE********/
+.calendar__heading{
+    height: 200px;
+    margin-top: -16px;
+    font-family: "barlow-regular";
+    text-align: center;
+    padding: 70px 0 25px 0;
+    background: url(img/calendar__heading-bg.jpg) center  center;
+    background-size: cover;
+
+    & h2{
+        padding: 30px 0 10px 0;
+        color: black;
+        letter-spacing: 7px;
+        text-transform: uppercase;
+        font-size: 30px;
+        text-shadow: 0 0 10px #fff;
+    }
+    & p{
+        color: black;
+        font-size: 18px;
+        padding: 0 15% 10px 15%;
+        text-shadow: 0 0 10px #fff;
+    }
+}
+.schedule{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-family: "barlow-regular";
+    background: url(img/schedule-bg.jpg) center center;
+    color: white;
+    background-color: white;
+    
+    &__block{
+        width: 24.86%;
+        height: 250px;
+        border: 1px solid white;
+        opacity: 0.7;
+
+        &:hover{
+            opacity: 1;
+            -webkit-transition-property: opacity;
+            -o-transition-property: opacity;
+            transition-property: opacity;
+            -webkit-transition-duration: 1.5s;
+            -o-transition-duration: 1.5s;
+            transition-duration: 1.5s;
+        }
+        & h2{
+            margin: 20px 0 0 20px;
+            font-size: 54px;
+            letter-spacing: 8px;
+        }
+        & a{
+            list-style: none;
+        }
+        & p{
+            margin: 0 0 0 20px;
+            font-size: 22px;
+        
+            &:last-of-type{
+                 padding-top: 90px;
+            }
+        }
+        &:first-of-type:hover{
+            background: url(./img/block1.jpg) center center;
+            background-size: cover;
+        }
+        &:nth-of-type(2):hover{
+            background: url(./img/block2.jpg) center center;
+            background-size: cover;
+        }
+        &:nth-of-type(3):hover{
+            background: url(./img/block3.jpg) center center;
+            background-size: cover;
+        }
+        &:nth-of-type(4):hover{
+            background: url(./img/block4.jpg) center center;
+            background-size: cover;
+        }
+        &:nth-of-type(5):hover{
+            background: url(./img/block5.jpg) center center;
+            background-size: cover;
+        }
+        &:nth-of-type(6):hover{
+            background: url(./img/block6.jpg) center center;
+            background-size: cover;
+        }
+        &:nth-of-type(7):hover{
+            background: url(./img/block7.jpg) center center;
+            background-size: cover;
+        }
+        &:nth-of-type(8):hover{
+            background: url(./img/block8.jpg) center center;
+            background-size: cover;
+        }
+    }
+}
+/*******ABOUT TRIPS*******/
+.about-trips{
+    background-color: white;
+    font-family: "barlow-regular";
+
+    &__heading{
+        padding: 50px 0;
+        text-align: center;
+
+        & h1{
+            color: black;
+            letter-spacing: 7px;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        & p{
+            color: black;
+            font-size: 18px;
+            line-height: 19px;
+            margin: 0 5%;
+        }
+    }
+    &__item{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 10px 7% 80px 7%;
+    }
+}
+.trip__block{
+    width: 49%;
+    margin: 10px 0;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+    &:hover{
+        margin-top: -8px;
+        margin-bottom: 8px;
+        -webkit-transition-property: margin-bottom, margin-top;
+        -o-transition-property: margin-bottom, margin-top;
+        transition-property: margin-bottom, margin-top;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+    }
+}
+.trip__img{
+    background-size: cover;
+    text-align: center;
+    color: white;
+    height: 330px;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.annapurna{
+    background: url(./img/annapurna.gif) center center;
+    background-size: cover;
+}
+.broad-peak{
+    background: url(./img/broad-peak.gif) center center;
+    background-size: cover;
+}
+.gasherbrum{
+    background: url(./img/gasherbrum.gif) center center;
+    background-size: cover; 
+}
+.teram{
+    background: url(./img/teram.gif) center center;
+    background-size: cover;
+}
+.ismoil{
+    background: url(./img/ismoil.gif) center center;
+    background-size: cover;
+}
+.sunanda{
+    background: url(./img/sunanda.gif) center center;
+    background-size: cover;
+}
+.yukshin{
+    background: url(./img/yukshin.gif) center center;
+    background-size: cover;
+}
+.everest{
+    background: url(./img/everest.gif) center center;
+    background-size: cover;
+}
+.trip__body{
+    padding: 7px;
+
+    & p:first-of-type{
+        text-shadow: 1px 1px 2px black;
+    }
+
+    & h2{
+        color: #3c3939;
+        font-family: 'kaushanscript';
+    }
+}
+/******************************MEDIA************************************************/
+@media screen and (max-width: 1296px) and (min-width: 1267px){
+    .schedule__block{
+        width: 24.83%;
+    }   
+}
+@media screen and (max-width: 1267px) and (min-width: 1260px){
+    .schedule__block{
+        width: 24.828%;
+    }   
+}
+@media screen and (max-width: 1260px) and (min-width: 1202px){
+    .schedule__block{
+        width: 24.82%;
+    }   
+}
+@media screen and (max-width: 1202px) and (min-width: 1138px){
+    .schedule__block{
+        width: 24.809%;
+    }   
+}
+@media screen and (max-width: 1138px) and (min-width: 1082px){
+    .schedule__block{
+        width: 24.798%;
+    }   
+}
+@media screen and (max-width: 1082px) and (min-width: 1041px){
+    .schedule__block{
+        width: 24.789%;
+    }   
+}
+@media screen and (max-width: 1041px) and (min-width: 1002px){
+    .schedule__block{
+        width: 24.78%;
+    }   
+}
+@media screen and (max-width: 1002px) and (min-width: 962px){
+    .schedule__block{
+        width: 24.77%;
+    }   
+}
+@media screen and (max-width: 962px) and (min-width: 926px){
+    .schedule{
+        &__block{
+            width: 24.76%;
+    
+            & p:last-of-type{
+                padding-top: 65px;
+            } 
+        }
+    }  
+}
+@media screen and (max-width: 926px) and (min-width: 893px){
+    .schedule{
+        &__block{
+            width: 24.75%;
+    
+            & p:last-of-type{
+                padding-top: 65px;
+            } 
+        }
+    }  
+}
+@media screen and (max-width: 893px) and (min-width: 862px){
+    .schedule__block{
+        width: 24.74%;
+    
+        & p:last-of-type{
+            padding-top: 65px;
+        } 
+    }
+} 
+@media screen and (max-width: 862px) and (min-width: 835px){
+    .schedule__block{
+        width: 24.73%;
+    
+        & p:last-of-type{
+            padding-top: 65px;
+        } 
+    }
+} 
+@media screen and (max-width: 835px) and (min-width: 808px){
+    .schedule__block{
+        width: 24.72%;
+    
+        & p:last-of-type{
+            padding-top: 65px;
+        } 
+    }
+} 
+@media screen and (max-width: 808px) and (min-width: 783px){
+    .schedule__block{
+        width: 24.71%;
+    
+        & p:last-of-type{
+            padding-top: 65px;
+        } 
+    }
+} 
+@media screen and (max-width: 783px) and (min-width: 760px){
+    .schedule{
+        
+        &__block{
+            width: 24.7%;
+            height: 220px;
+    
+            & h2{
+                font-size: 40px;
+                letter-spacing: 2px;
+            }
+            & p{
+                font-size: 18px;
+            
+                &:last-of-type{
+                     padding-top: 70px;
+                }
+            } 
+        }
+    }  
+}
+
+@media screen and (max-width: 760px) and (min-width: 738px){
+    .schedule{
+        
+        &__block{
+            width: 24.69%;
+            height: 220px;
+    
+            & h2{
+                font-size: 40px;
+                letter-spacing: 2px;
+                margin: 13px 0 0 13px;
+            }
+            & p{
+                font-size: 18px;
+                margin: 0 0 0 13px;
+            
+                &:last-of-type{
+                     padding-top: 70px;
+                }
+            } 
+        }
+    }  
+}
+@media screen and (max-width: 738px) and (min-width: 719px){
+    .schedule{
+        
+        &__block{
+            width: 24.68%;
+            height: 220px;
+    
+            & h2{
+                font-size: 40px;
+                letter-spacing: 2px;
+                margin: 12px 0 0 12px;
+            }
+            & p{
+                font-size: 18px;
+                margin: 0 0 0 12px;
+            
+                &:last-of-type{
+                     padding-top: 70px;
+                }
+            } 
+        }
+    }  
+}
+@media screen and (max-width: 719px) and (min-width: 701px){
+    .schedule{
+        
+        &__block{
+            width: 24.67%;
+            height: 220px;
+    
+            & h2{
+                font-size: 40px;
+                letter-spacing: 2px;
+                margin: 10px 0 0 10px;
+            }
+            & p{
+                font-size: 18px;
+                margin: 0 0 0 10px;
+            
+                &:last-of-type{
+                     padding-top: 70px;
+                }
+            } 
+        }
+    }  
+}
+@media screen and (max-width: 776px) and (min-width: 650px){
+    .calendar__heading{
+        height: 160px;
+
+        & h2{
+            font-size: 26px;
+        }
+        & p{
+            font-size: 17px;
+        }
+    }
+}
+@media screen and (max-width: 650px) and (min-width: 460px){
+    .calendar__heading{
+        height: 170px;
+
+        padding: 70px 0 15px;
+        & h2{
+            font-size: 23px;
+        }
+        & p{
+            font-size: 15px;
+        }
+    }
+}
+@media screen and (max-width: 460px) and (min-width: 320px){
+    .calendar__heading{
+        height: 170px;
+
+        padding: 30px 0 15px;
+        & h2{
+            font-size: 19px;
+
+        }
+        & p{
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width: 701px) and (min-width: 666px){
+    .schedule{
+        
+        &__block{
+            width: 24.65%;
+            height: 220px;
+    
+            & h2{
+                font-size: 40px;
+                letter-spacing: 2px;
+                margin: 9px 0 0 9px;
+            }
+            & p{
+                font-size: 18px;
+                margin: 0 0 0 9px;
+            
+                &:last-of-type{
+                     padding-top: 70px;
+                }
+            } 
+        }
+    }  
+}
+@media screen and (max-width: 666px) and (min-width: 635px){
+    .schedule{
+        
+        &__block{
+            width: 24.63%;
+            height: 220px;
+    
+            & h2{
+                font-size: 38px;
+                letter-spacing: 2px;
+            }
+            & p{
+                font-size: 17px;
+            
+                &:last-of-type{
+                     padding-top: 60px;
+                }
+            } 
+        }
+    }  
+}
+@media screen and (max-width: 635px) and (min-width: 609px){
+    .schedule{
+        
+        &__block{
+            width: 24.61%;
+            height: 200px;
+    
+            & h2{
+                font-size: 38px;
+                letter-spacing: 2px;
+                margin: 8px 0 0 8px;
+            }
+            & p{
+                font-size: 17px;
+                margin: 0 0 0 8px;
+            
+                &:last-of-type{
+                     padding-top: 50px;
+                }
+            } 
+        }
+    }  
+}
+@media screen and (max-width: 609px) and (min-width: 582px){
+    .schedule{
+        
+        &__block{
+            width: 24.59%;
+            height: 200px;
+    
+            & h2{
+                font-size: 38px;
+                letter-spacing: 2px;
+                margin: 5px 0 0 5px;
+            }
+            & p{
+                font-size: 17px;
+                margin: 0 0 0 5px;
+            
+                &:last-of-type{
+                     padding-top: 50px;
+                }
+            } 
+        }
+    }  
+}
+@media screen and (max-width: 582px) and (min-width: 560px){
+    .schedule{
+        
+        &__block{
+            width: 24.57%;
+            height: 180px;
+    
+            & h2{
+                font-size: 34px;
+                letter-spacing: 2px;
+                margin: 5px 0 0 5px;
+            }
+            & p{
+                font-size: 16px;
+                margin: 0 0 0 5px;
+            
+                &:last-of-type{
+                     padding-top: 40px;
+                }
+            } 
+        }
+    }  
+}
+@media screen and (max-width: 560px) and (min-width: 539px){
+    .schedule{
+        
+        &__block{
+            width: 24.55%;
+            height: 170px;
+    
+            & h2{
+                font-size: 34px;
+                letter-spacing: 2px;
+                margin: 5px 0 0 5px;
+            }
+            & p{
+                font-size: 16px;
+                margin: 0 0 0 5px;
+            
+                &:last-of-type{
+                     padding-top: 35px;
+                }
+            } 
+        }
+    }  
+}
+@media screen and (max-width: 539px) and (min-width: 521px){
+    .schedule{
+        
+        &__block{
+            width: 24.53%;
+            height: 170px;
+    
+            & h2{
+                font-size: 30px;
+                letter-spacing: 0;
+                margin: 5px 0 0 5px;
+            }
+            & p{
+                font-size: 15px;
+                margin: 0 0 0 5px;
+            
+                &:last-of-type{
+                     padding-top: 35px;
+                }
+            } 
+        }
+    }  
+}
+@media screen and (max-width: 521px) and (min-width: 504px){
+    .schedule{
+        
+        &__block{
+            width: 24.51%;
+            height: 160px;
+    
+            & h2{
+                font-size: 30px;
+                letter-spacing: 0;
+                margin: 4px 0 0 4px;
+            }
+            & p{
+                font-size: 15px;
+                margin: 0 0 0 4px;
+            
+                &:last-of-type{
+                     padding-top: 30px;
+                }
+            } 
+        }
+    }  
+}
+@media screen and (max-width: 504px) and (min-width: 466px){
+    .schedule{
+        
+        &__block{
+            width: 49.46%;
+            height: 160px;
+    
+            & h2{
+                font-size: 36px;
+                letter-spacing: 0;
+                margin: 4px 0 0 4px;
+            }
+            & p{
+                font-size: 18px;
+                margin: 0 0 0 4px;
+            
+                &:last-of-type{
+                     padding-top: 30px;
+                }
+            } 
+        }
+    }  
+}
+@media screen and (max-width: 466px) and (min-width: 435px){
+    .schedule{
+        
+        &__block{
+            width: 49.41%;
+            height: 160px;
+    
+            & h2{
+                font-size: 36px;
+                letter-spacing: 0;
+                margin: 4px 0 0 4px;
+            }
+            & p{
+                font-size: 18px;
+                margin: 0 0 0 4px;
+            
+                &:last-of-type{
+                     padding-top: 30px;
+                }
+            } 
+        }
+    }  
+}
+@media screen and (max-width: 435px) and (min-width: 403px){
+    .schedule{
+        
+        &__block{
+            width: 49.35%;
+            height: 160px;
+    
+            & h2{
+                font-size: 34px;
+                letter-spacing: 0;
+                margin: 4px 0 0 4px;
+            }
+            & p{
+                font-size: 17px;
+                margin: 0 0 0 4px;
+            
+                &:last-of-type{
+                     padding-top: 30px;
+                }
+            } 
+        }
+    }  
+}
+@media screen and (max-width: 403px) and (min-width: 370px){
+    .schedule{
+        
+        &__block{
+            width: 49.27%;
+            height: 160px;
+    
+            & h2{
+                font-size: 34px;
+                letter-spacing: 0;
+                margin: 4px 0 0 4px;
+            }
+            & p{
+                font-size: 17px;
+                margin: 0 0 0 4px;
+            
+                &:last-of-type{
+                     padding-top: 30px;
+                }
+            } 
+        }
+    }  
+}
+@media screen and (max-width: 370px){
+    .schedule{
+        text-align: center;
+        &__block{
+            width: 100%;
+            height: 160px;
+    
+            & h2{
+                font-size: 34px;
+                letter-spacing: 0;
+                margin: 4px 0 0 4px;
+            }
+            & p{
+                font-size: 17px;
+                margin: 0 0 0 4px;
+            
+                &:last-of-type{
+                     padding-top: 30px;
+                }
+            } 
+        }
+    }  
+}
+@media screen and (max-width: 950px){
+    .trip__block{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .about-trips__item{
+        padding: 10px 2% 80px 2%;
+    }
+}
+
+@media screen and (max-width: 675px){
+    .about-trips__heading{
+        & h1{
+            font-size: 26px;
+        }
+        & p{
+            font-size: 15px;
+        }
+    }
+}
+@media screen and (max-width: 435px) and (min-width: 365px){
+    .trip__img{
+        height: 250px;
+        font-size: 38px;
+    }
+}
+@media screen and (max-width: 365px) and (min-width: 320px){
+    .trip__img{
+        height: 200px;
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 320px){
+    .trip__img{
+        height: 170px;
+        font-size: 28px;
+    }
+    .trip__body p{
+        font-size: 14px;
+    }
+    .calendar__heading{
+        & h2{
+            font-size: 22px;
+        }
+        & p{
+            font-size: 15px;
+        }
+    }
+}
+

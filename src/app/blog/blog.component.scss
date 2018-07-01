@@ -1,0 +1,289 @@
+.blog{
+    &__heading{
+        margin-top: -16px;
+        height: 380px;
+        background: url(img/blog__heading-bg.jpg) bottom center;
+        background-size: cover;
+        font-size: 90px;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        text-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+        & h2{
+            margin:0;
+            padding-top: 105px;
+        }
+    }
+}
+/*********NEWS*********/
+.news{
+    background-color: white;
+    margin-top: -25px;
+
+    &__heading{
+        text-align: center;
+        font-family: 'barlow-regular';
+
+        & h1{
+            padding: 60px 0 30px 0;
+            color: black;
+            letter-spacing: 7px;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        & p{
+            color: black;
+            font-size: 18px;
+            padding: 0 15% 5px 15%;
+        }
+    }
+    &__item{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 50px 12% 80px 12%;
+    }
+}
+
+.article__block{
+    width: 32%;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+    &:hover{
+        margin-top: -8px;
+        margin-bottom: 8px;
+        -webkit-transition-property: margin-bottom, margin-top;
+        -o-transition-property: margin-bottom, margin-top;
+        transition-property: margin-bottom, margin-top;
+        -webkit-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+    }
+}
+.first{
+    background: url(img/article-1.jpg);
+    height: 170px;
+    background-size: cover;
+}
+.second{
+    background: url(img/article-2.jpg);
+    height: 170px;
+    background-size: cover;
+}
+.third{
+    background: url(img/article-3.jpg);
+    height: 170px;
+    background-size: cover;
+}
+.article__body{
+    padding: 7px;
+
+    & p:first-of-type{
+        text-shadow: 1px 1px 2px black;
+    }
+    & h2{
+        color: #3c3939;
+        font-family: 'kaushanscript';
+    }
+}
+
+/******COMMENTS*******/
+.comments{
+    background-color: #ede8e8;
+    margin-top: -25px;
+
+    &__heading{
+        text-align: center;
+        font-family: 'barlow-regular';
+
+        & h1{
+            padding: 60px 0 30px 0;
+            color: black;
+            letter-spacing: 7px;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        & p{
+            color: black;
+            font-size: 18px;
+            padding: 0 15%;
+        }
+    }
+    &__item{
+        margin-top: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 50px 12% 80px 12%;
+    }
+}
+.comment__block{
+    width: 32%;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+    &:hover{
+        margin-top: -8px;
+        margin-bottom: 8px;
+        -webkit-transition-property: margin-bottom, margin-top;
+        -o-transition-property: margin-bottom, margin-top;
+        transition-property: margin-bottom, margin-top;
+        -webkit-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+    }
+}
+.first-comment{
+    background: url(img/comment__heading-1.jpeg);
+    height: 170px;
+    background-size: cover;
+}
+.second-comment{
+    background: url(img/comment__heading-2.jpg);
+    height: 170px;
+    background-size: cover;
+}
+.third-comment{
+    background: url(img/comment__heading-3.jpg);
+    height: 170px;
+    background-size: cover;
+}
+.comment__photo{
+    height: 140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    
+    & img{
+        margin: 10px;
+        width: 130px;
+        height: auto; 
+        border: 1px solid #f7f3f3;
+        border-radius: 50%;
+    }
+}
+.comment__body{
+    padding: 7px;
+
+    & p:first-of-type{
+        text-shadow: 1px 1px 2px black;
+    }
+    & h2{
+        color: #3c3939;
+        font-family: 'kaushanscript';
+    }
+}
+
+/***********************MEDIA*************************/
+@media screen and (max-width: 1070px) and (min-width: 765px){
+    .news__item{
+        padding: 50px 5% 80px 5%;
+    }
+    .comments__item{
+        padding: 50px 5% 80px 5%;
+    }
+}
+@media screen and (max-width: 765px) and (min-width: 365px){
+    .news__item{
+        padding: 50px 2% 80px 2%;
+    }
+    .comments__item{
+        padding: 50px 2% 80px 2%;
+    }
+}
+@media screen and (max-width: 675px){
+    .blog__heading{
+        height: 300px;
+        font-size: 70px;
+
+        & h2{
+            padding-top: 80px;
+        }
+    }
+    .news__heading{
+        & h1{
+            padding: 50px 0 20px 0;
+            font-size: 26px;
+        }
+        & p{
+            font-size: 16px;
+            padding: 0 10%;
+        }
+    }
+    .comments__heading{
+        & h1{
+            padding: 50px 0 20px 0;
+            font-size: 26px;
+        }
+        & p{
+            font-size: 16px;
+            padding: 0 10%;
+        }
+    }
+}
+@media screen and (max-width: 655px){
+    .blog__heading{
+        height: 250px;
+
+        & h2{
+            padding: 60px 0 30px 0; 
+        }
+    }
+    .news__item{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 50px 5% 80px 5%;
+    }
+    .comments__item{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 50px 5% 80px 5%;
+    }
+    .article__block, .comment__block{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .first, .second, .third{
+        height: 220px;
+    }
+    .first-comment, .second-comment, .third-comment{
+        height: 220px;
+    }
+}
+@media screen and (max-width: 405px){
+    .blog__heading{
+        height: 200px;
+        font-size: 40px;
+
+        & h2{
+            padding: 60px 0 30px 0; 
+        }
+    }
+}
+
+
